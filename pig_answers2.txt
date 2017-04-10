@@ -1,0 +1,6 @@
+(i) (a) 1-2 maps and 1-2 reduces are generated in each job
+	(b) The schema looks like this (from illustrate) : 
+	| cross_table     | won::date:bytearray     | won::type:chararray     | won::parl:int     | won::prov:chararray     | won::riding:chararray     | won::lastname:chararray     | won::firstname:chararray     | won::gender:chararray     | won::occupation:chararray     | won::party:chararray     | won::votes:int     | won::percent:double     | won::elected:int     | lost::date:bytearray     | lost::type:chararray     | lost::parl:int     | lost::prov:chararray     | lost::riding:chararray     | lost::lastname:chararray     | lost::firstname:chararray     | lost::gender:chararray     | lost::occupation:chararray     | lost::party:chararray     | lost::votes:int     | lost::percent:double     | lost::elected:int     | 
+	(c) 1min 9secs.
+
+(ii)
