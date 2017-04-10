@@ -1,6 +1,9 @@
-(i) (a) 1-2 maps and 1-2 reduces are generated in each job
+(i) (a) 1 to 2 maps and 1 reduce are generated in each job
 	(b) The schema looks like this (from illustrate) : 
 	| cross_table     | won::date:bytearray     | won::type:chararray     | won::parl:int     | won::prov:chararray     | won::riding:chararray     | won::lastname:chararray     | won::firstname:chararray     | won::gender:chararray     | won::occupation:chararray     | won::party:chararray     | won::votes:int     | won::percent:double     | won::elected:int     | lost::date:bytearray     | lost::type:chararray     | lost::parl:int     | lost::prov:chararray     | lost::riding:chararray     | lost::lastname:chararray     | lost::firstname:chararray     | lost::gender:chararray     | lost::occupation:chararray     | lost::party:chararray     | lost::votes:int     | lost::percent:double     | lost::elected:int     | 
+
 	(c) 1min 9secs.
 
-(ii)
+(ii) (a) 1 to 2 reduces and the first job has 0 reduce task, and the next 2 jobs have 4 reduce tasks.
+	 (b) 1min 9secs.
+	 (c) No, there is no difference in the query execution time which is what we were expecting because the mapper is the bottleneck as it consumes a lot of CPU cycles(as providing the input data from the disk is slow) compared to the reducers which almost do not use CPU cycles and is mostly I/O bound.

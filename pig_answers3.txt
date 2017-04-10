@@ -1,0 +1,4 @@
+(a) The schema looks like the following and it is nested :
+	group:int,fltrd:bag{:tuple(date:bytearray,type:chararray,parl:int,prov:chararray,riding:chararray,lastname:chararray,firstname:chararray,gender:chararray,occupation:chararray,party:chararray,votes:int,percent:double,elected:int)}
+
+(b) 1 min 21 secs.
